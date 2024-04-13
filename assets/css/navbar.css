@@ -1,0 +1,120 @@
+.navbar .navbar-brand{
+    font-size: 34px;
+}
+@media (width <768px) {
+    .navbar .navbar-brand{
+        font-size: 24px;
+    }
+    
+}
+.navbar .search input::placeholder{
+    font-size: 10px;
+    font-weight: 600;
+}
+.navbar .search input:focus-visible{
+    outline: none;
+}
+.navbar .nav-link i{
+    font-size: 20px;
+}
+.navbar .first-list .nav-link,
+.navbar .third-list .nav-link{
+    width: 40px;
+    height: 40px;
+    background-color:var(--bg-gray);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.navbar .first-list .nav-link i{
+   color: var(--text-gray);
+}
+.navbar .first-list .nav-link.active {
+   background-color: var(--bg-active-link);
+}
+.navbar .first-list .nav-link.active i {
+   color: rgb(var(--bs-primary-rgb));
+}
+.navbar .second-list .nav-link {
+    margin-right: 9px;
+}
+.navbar .second-list .nav-link i{
+   color: rgb(var(--bs-primary-rgb));
+}
+/* offcanva style */
+.navbar .offcanva-btn{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.navbar .offcanva-btn::before,
+.navbar .offcanva-btn::after{
+    content:'';
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    right: 0;
+    border-radius: 1px;
+    transition: .25s;
+}
+.navbar .offcanva-btn::before{
+    width: 40px;
+    top: 8px;
+}
+.navbar .offcanva-btn::after{
+    width: 30px;
+    top: 20px;
+}
+.navbar .offcanva-btn.active::before{
+    transform: translateY(8px) rotate(45deg);
+}
+.navbar .offcanva-btn.active::after{
+    transform: translateY(-8px) rotate(-45deg);
+    width:40px;
+    top:24px;
+}
+/* offcanva */
+.offcanvas {
+    height: 100vh;
+    overflow-y: auto;
+}
+.content-card li i{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+}
+.content-card:nth-child(1) li i{
+    color: white;
+}
+.content-card:nth-child(2) li i{
+    color: rgb(var(--bs-primary-rgb));
+}
+.content-card:nth-child(3) li i{
+    color: var(--text-gray);
+}
+.content-card li h3{
+    font-size: 16px;
+}
+.content-card li h3{
+    color: var(--text-gray-888);
+    transition: color .25s;
+}
+.content-card p{
+    font-size: 12px;
+    font-weight: 600;
+}
+.content-card li:hover h3{
+    color: rgb(var(--bs-primary-rgb));
+}
+.content-card li.item h3{
+    font-size: 14px;
+    color: var(--text-gray-888);
+}

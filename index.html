@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduma</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="vendor//css/all.min.css" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="vendor/css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="vendor/css/owl.theme.default.min.css"/>
+    <!-- lightbox -->
+    <link rel="stylesheet" href="vendor/css/lightbox.min.css">
+    <!-- customized -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+</head>
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg  fixed-top bg-light">
+        <div class="container-fluid justify-content-start">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-bolt text-success"></i><span
+                    class="text-primary fredoka-font">Sociala</span></a>
+            <div class="search  d-none d-lg-block d-flex align-items-center p-2 rounded-pill bg-gray ms-4">
+                <i class="fa-solid fa-magnifying-glass ms-2 text-secondary"></i>
+                <input type="search" class="bg-transparent border-0" placeholder="start typing to search...">
+            </div>
+            <div class="first-list d-none d-xl-block" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-bolt "></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-video"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="second-list  d-none d-lg-block ms-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active position-relative" aria-current="page" href="#"><i
+                                class="fa-solid fa-bell"><span
+                                    class="p-1 rounded-circle bg-warning position-absolute"></span></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-regular fa-message message-btn"></i></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-gear infinte-rotate"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="third-list  d-block d-lg-none ms-auto" id="navbarSupportedContent">
+                <ul class="list-unstyled me-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i
+                                class="fa-regular fa-comment"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-video"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="offcanva-btn position-relative border-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div class=" d-block d-lg-none offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+        tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body">
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">new feeds</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-tv bg-blue-gradient"></i>
+                            <h3 class="ms-3">NewsFeed</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-award bg-red-gradient"></i>
+                            <h3 class="ms-3">Bades</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-globe  bg-gold-gradient"></i>
+                            <h3 class="ms-3">Explore Stories</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-bolt bg-mini-gradient"></i>
+                            <h3 class="ms-3">Popular Groups</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-regular fa-user bg-blue-gradient"></i>
+                            <h3 class="ms-3">Author Profile</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">more pages</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-inbox"></i>
+                            <h3 class="ms-3">Email Box</h3>
+                            <span class="bg-warning text-white ms-auto px-2 py-1 rounded">584</span>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-house"></i>
+                            <h3 class="ms-3">Near Hotel</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3 class="ms-3">Latest Events</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h3 class="ms-3">Live Stream</h3>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">account</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-gear"></i>
+                            <h3 class="ms-3">Settings</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <h3 class="ms-3">Analytics</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-message"></i>
+                            <h3 class="ms-3">Chat</h3>
+                            <span class="bg-warning text-white ms-auto px-2 py-1 rounded">23</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end navbar -->
+    <!-- start sidebar -->
+    <aside class="sidebar position-fixed d-none d-lg-block">
+        <div class="p-3">
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">new feeds</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-tv bg-blue-gradient"></i>
+                            <h3 class="ms-3">NewsFeed</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-award bg-red-gradient"></i>
+                            <h3 class="ms-3">Bades</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-globe  bg-gold-gradient"></i>
+                            <h3 class="ms-3">Explore Stories</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-bolt bg-mini-gradient"></i>
+                            <h3 class="ms-3">Popular Groups</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-regular fa-user bg-blue-gradient"></i>
+                            <h3 class="ms-3">Author Profile</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">more pages</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-inbox"></i>
+                            <h3 class="ms-3">Email Box</h3>
+                            <span class="bg-warning text-white ms-auto px-2 py-1 rounded">584</span>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-house"></i>
+                            <h3 class="ms-3">Near Hotel</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3 class="ms-3">Latest Events</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h3 class="ms-3">Live Stream</h3>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">account</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-gear"></i>
+                            <h3 class="ms-3">Settings</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <h3 class="ms-3">Analytics</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-message"></i>
+                            <h3 class="ms-3">Chat</h3>
+                            <span class="bg-warning text-white ms-auto px-2 py-1 rounded">23</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- end sidebar -->
+    <!-- start main-content -->
+    <section class="main-content ">
+        <div class="container-fluid container-lg">
+            <div class="row mt-4 pb-4">
+                <!-- left-side -->
+                <div class="col-lg-8 col-xl-9">
+                    <!-- stories -->
+                    <div class=" p-3">
+                        <div class="owl-carousel stories-carousel">
+                            <!-- single story -->
+                            <div>
+                                <div class="content position-absolute bottom-0">
+                                    <span
+                                        class="bg-white w50 d-flex align-items-center justify-content-center m-auto mb-2"><i
+                                            class="fa-solid fa-plus"></i></span>
+                                    <p class="text-white text-capitalize font-xs fw-600">add story </p>
+                                </div>
+                            </div>
+                            <!-- single story -->
+                            <div>
+                                <img src="assets/images/stories/s-1.jpg" alt="image">
+                                <div class="content position-absolute bottom-0">
+                                    <img src="assets/images/stories/user-11.png" class="w50 m-auto" alt="user pic">
+                                    <p class="text-white text-capitalize font-xs fw-600">Victor Exrixon </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="assets/images/stories/s-2.jpg" alt="image">
+                                <div class="content position-absolute bottom-0">
+                                    <img src="assets/images/stories/user-12.png" class="w50 m-auto" alt="user pic">
+                                    <p class="text-white text-capitalize font-xs fw-600">Surfiya Zakir  </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="assets/images/stories/s-6.jpg" alt="image">
+                                <div class="content position-absolute bottom-0">
+                                    <img src="assets/images/users/user-9.png" class="w50 m-auto" alt="user pic">
+                                    <p class="text-white text-capitalize font-xs fw-600">Goria Coast  </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="assets/images/stories/story-5.jpg" alt="image">
+                                <div class="content position-absolute bottom-0">
+                                    <img src="assets/images/users/user-4.png" class="w50 m-auto" alt="user pic">
+                                    <p class="text-white text-capitalize font-xs fw-600">Hurin Seary  </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="assets/images/stories/story-7.jpg" alt="image">
+                                <div class="content position-absolute bottom-0">
+                                    <img src="assets/images/users/user-3.png" class="w50 m-auto" alt="user pic">
+                                    <p class="text-white text-capitalize font-xs fw-600">David Goria  </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="assets/images/stories/story-6.jpg" alt="image">
+                                <div class="content position-absolute bottom-0">
+                                    <img src="assets/images/users/user-7.png" class="w50 m-auto" alt="user pic">
+                                    <p class="text-white text-capitalize font-xs fw-600">Seary Victor  </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end stories -->
+                    <!-- create post -->
+                    <div class="rounded-xxl shadow-xss p-4">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-pen-to-square w35 bg-gray center-item text-primary"></i>
+                            <span class="text-gray text-capitalize ms-2">create post</span>
+                        </div>
+                        <div class="mt-3 position-relative">
+                            <textarea rows="6" class="w-100 rounded-xxl pt-2 ps-5"
+                                placeholder="What's on your mind?"></textarea>
+                            <img src="assets/images/users/user-9.png" class="w35 position-absolute" alt="user"
+                                style="left:5px;  top:5px;">
+                        </div>
+                        <div class="d-flex mt-3">
+                            <a href="#" class="font-xs me-3">
+                                <i class="fa-solid fa-video text-danger"></i>
+                                <span class="ms-2 text-capitalize d-none d-md-inline-block">live video</span>
+                            </a>
+                            <a href="#" class="font-xs me-3">
+                                <i class="fa-solid fa-image text-success"></i>
+                                <span class="ms-2 text-capitalize d-none d-md-inline-block">photo/video</span>
+                            </a>
+                            <a href="#" class="font-xs me-3">
+                                <i class="fa-solid fa-camera text-warning"></i>
+                                <span class="ms-2 text-capitalize d-none d-md-inline-block">feeling/activity</span>
+                            </a>
+                            <a href="#" class="font-xs me-3 bg-gray w35 center-item ms-auto">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end create post -->
+                    <!-- start post -->
+                    <div class="rounded-xxl shadow-xss mt-3 p-4">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/users/user-8.png" alt="user" class="w50">
+                            <div class="ms-2">
+                                <h3 class="font-xs m-0 text-capitalize fw-600">sham sbehat</h3>
+                                <p class="text-gray fw-bold font-xxs">3 houer ago</p>
+                            </div>
+                            <a href="#" class="font-xs me-3 bg-gray w35 center-item ms-auto">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </div>
+                        <p class="mt-2 text-gray font-xs">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci inventore et architecto
+                            quos ad reiciendis sunt autem consequuntur velit nisi!
+                            <a href="#" class="text-primary fw-bold">see more</a>
+                        </p>
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="assets/images/t-10.jpg" data-lightbox="roadtrip" class="d-block">
+                                    <img src="assets/images/t-10.jpg" class="img-fluid rounded" alt="man">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="assets/images/t-11.jpg" data-lightbox="roadtrip" class="d-block">
+                                    <img src="assets/images/t-11.jpg" class="img-fluid rounded" alt="man">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="assets/images/t-12.jpg" data-lightbox="roadtrip"
+                                    class="position-relative d-block">
+                                    <img src="assets/images/t-12.jpg" class="img-fluid rounded" alt="man">
+                                    <div class=" img-overlay">
+                                        +2
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3 align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-thumbs-up text-white bg-primary-gradiant w35 center-item"></i>
+                                <i class="fa-solid fa-heart text-white bg-red-gradient w35 center-item ms-1"></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block">2.8k likes</span>
+                            </div>
+                            <div class="ms-4 d-flex align-items-center">
+                                <i class="fa-regular fa-comment fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block">22 comment</span>
+                            </div>
+                            <div class="ms-auto d-flex align-items-center">
+                                <i class="fa-solid fa-share-nodes fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block">share</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end post -->
+                    <!-- start post -->
+                    <div class="rounded-xxl shadow-xss mt-3 p-4">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/users/user-6.png" alt="user" class="w50">
+                            <div class="ms-2">
+                                <h3 class="font-xs m-0 text-capitalize fw-600">ahmad sbehat</h3>
+                                <p class="text-gray fw-bold font-xxs">4 houer ago</p>
+                            </div>
+                            <a href="#" class="font-xs me-3 bg-gray w35 center-item ms-auto">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </div>
+                        <p class="mt-2 text-gray font-xs">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci inventore et architecto
+                            quos ad reiciendis sunt autem consequuntur velit nisi!
+                            <a href="#" class="text-primary fw-bold">see more</a>
+                        </p>
+                        <div class="d-flex mt-3 align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-thumbs-up text-white bg-primary-gradiant w35 center-item"></i>
+                                <i class="fa-solid fa-heart text-white bg-red-gradient w35 center-item ms-1"></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block ">2.8k likes</span>
+                            </div>
+                            <div class="ms-4 d-flex align-items-center">
+                                <i class="fa-regular fa-comment fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block">22 comment</span>
+                            </div>
+                            <div class="ms-auto d-flex align-items-center">
+                                <i class="fa-solid fa-share-nodes fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block ">share</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end post -->
+                    <!-- lives -->
+                    <div class=" p-3">
+                        <div class="owl-carousel lives-carousel">
+                            <!-- single story -->
+                            <div class="h-100">
+                                <div class="top-section">
+                                    <img src="assets/images/stories/s-1.jpg">
+                                </div>
+                                <div class="bottom-section bg-white position-relative">
+                                    <div class="w50 bg-white p-1 position-absolute user-image">
+                                        <img src="assets/images/users/user-8.png" class="img-fluid" alt="user">
+                                    </div>
+                                    <div class="pt-4">
+                                        <h3 class="fw-600 font-xs text-capitalize">Aliqa Macale </h3>
+                                        <span class="text-gray font-xxs d-block mb-3">support@gmail.com</span>
+                                        <a href="#" class="px-2 py-1 bg-danger text-white rounded font-xxs ">live</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-100">
+                                <div class="top-section">
+                                    <img src="assets/images/stories/s-2.jpg">
+                                </div>
+                                <div class="bottom-section bg-white position-relative">
+                                    <div class="w50 bg-white p-1 position-absolute user-image">
+                                        <img src="assets/images/users/user-4.png" class="img-fluid" alt="user">
+                                    </div>
+                                    <div class="pt-4">
+                                        <h3 class="fw-600 font-xs text-capitalize">Seary Victor  </h3>
+                                        <span class="text-gray font-xxs d-block mb-3">support@gmail.com</span>
+                                        <a href="#" class="px-2 py-1 bg-danger text-white rounded font-xxs ">live</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-100">
+                                <div class="top-section">
+                                    <img src="assets/images/stories/story-8.jpg">
+                                </div>
+                                <div class="bottom-section bg-white position-relative">
+                                    <div class="w50 bg-white p-1 position-absolute user-image">
+                                        <img src="assets/images/users/user-7.png" class="img-fluid" alt="user">
+                                    </div>
+                                    <div class="pt-4">
+                                        <h3 class="fw-600 font-xs text-capitalize">John Steere   </h3>
+                                        <span class="text-gray font-xxs d-block mb-3">support@gmail.com</span>
+                                        <a href="#" class="px-2 py-1 bg-danger text-white rounded font-xxs ">live</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-100">
+                                <div class="top-section">
+                                    <img src="assets/images/stories/s-1.jpg">
+                                </div>
+                                <div class="bottom-section bg-white position-relative">
+                                    <div class="w50 bg-white p-1 position-absolute user-image">
+                                        <img src="assets/images/users/user-8.png" class="img-fluid" alt="user">
+                                    </div>
+                                    <div class="pt-4">
+                                        <h3 class="fw-600 font-xs text-capitalize">Aliqa Macale </h3>
+                                        <span class="text-gray font-xxs d-block mb-3">support@gmail.com</span>
+                                        <a href="#" class="px-2 py-1 bg-danger text-white rounded font-xxs ">live</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-100">
+                                <div class="top-section">
+                                    <img src="assets/images/stories/s-2.jpg">
+                                </div>
+                                <div class="bottom-section bg-white position-relative">
+                                    <div class="w50 bg-white p-1 position-absolute user-image">
+                                        <img src="assets/images/users/user-4.png" class="img-fluid" alt="user">
+                                    </div>
+                                    <div class="pt-4">
+                                        <h3 class="fw-600 font-xs text-capitalize">Seary Victor  </h3>
+                                        <span class="text-gray font-xxs d-block mb-3">support@gmail.com</span>
+                                        <a href="#" class="px-2 py-1 bg-danger text-white rounded font-xxs ">live</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-100">
+                                <div class="top-section">
+                                    <img src="assets/images/stories/story-8.jpg">
+                                </div>
+                                <div class="bottom-section bg-white position-relative">
+                                    <div class="w50 bg-white p-1 position-absolute user-image">
+                                        <img src="assets/images/users/user-7.png" class="img-fluid" alt="user">
+                                    </div>
+                                    <div class="pt-4">
+                                        <h3 class="fw-600 font-xs text-capitalize">John Steere   </h3>
+                                        <span class="text-gray font-xxs d-block mb-3">support@gmail.com</span>
+                                        <a href="#" class="px-2 py-1 bg-danger text-white rounded font-xxs ">live</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end lives -->
+                     <!-- start video -->
+                     <div class="rounded-xxl shadow-xss mt-3 p-4">
+                        <div class="d-flex align-items-center pb-2">
+                            <img src="assets/images/users/user-3.png" alt="user" class="w50">
+                            <div class="ms-2">
+                                <h3 class="font-xs m-0 text-capitalize fw-600">Anthony Daugloi </h3>
+                                <p class="text-gray fw-bold font-xxs">4 houer ago</p>
+                            </div>
+                            <a href="#" class="font-xs me-3 bg-gray w35 center-item ms-auto">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </div>
+                        <video src="assets/images/v-2.mp4" width="100%" controls class="rounded"></video>
+                        <p class="mt-2 text-gray font-xs pt-2">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci inventore et architecto
+                            quos ad reiciendis sunt autem consequuntur velit nisi!
+                            <a href="#" class="text-primary fw-bold">see more</a>
+                        </p>
+                        <div class="d-flex mt-3 align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-thumbs-up text-white bg-primary-gradiant w35 center-item"></i>
+                                <i class="fa-solid fa-heart text-white bg-red-gradient w35 center-item ms-1"></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block ">2.8k likes</span>
+                            </div>
+                            <div class="ms-4 d-flex align-items-center">
+                                <i class="fa-regular fa-comment fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block">22 comment</span>
+                            </div>
+                            <div class="ms-auto d-flex align-items-center">
+                                <i class="fa-solid fa-share-nodes fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block ">share</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end video -->
+                     <!-- start images -->
+                     <div class="rounded-xxl shadow-xss mt-3 p-4">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/users/user-8.png" alt="user" class="w50">
+                            <div class="ms-2">
+                                <h3 class="font-xs m-0 text-capitalize fw-600">sham sbehat</h3>
+                                <p class="text-gray fw-bold font-xxs">3 houer ago</p>
+                            </div>
+                            <a href="#" class="font-xs me-3 bg-gray w35 center-item ms-auto">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </div>
+                        <p class="mt-2 text-gray font-xs">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci inventore et architecto
+                            quos ad reiciendis sunt autem consequuntur velit nisi!
+                            <a href="#" class="text-primary fw-bold">see more</a>
+                        </p>
+                        <div class="row">
+                            <div class="col-6 mb-2">
+                                <a href="assets/images/buildings/t-21.jpg" data-lightbox="buildings" class="d-block">
+                                    <img src="assets/images/buildings/t-21.jpg" class="img-fluid w-100  rounded" alt="buildings">
+                                </a>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <a href="assets/images/buildings/t-22.jpg" data-lightbox="buildings" class="d-block">
+                                    <img src="assets/images/buildings/t-22.jpg" class="img-fluid w-100 rounded" alt="buildings">
+                                </a>
+                            </div>
+                            <div class="col-4 mb-2">
+                                <a href="assets/images/buildings/t-23.jpg" data-lightbox="buildings" class="d-block">
+                                    <img src="assets/images/buildings/t-23.jpg" class="img-fluid w-100 rounded" alt="buildings">
+                                </a>
+                            </div>
+                            <div class="col-4 mb-2">
+                                <a href="assets/images/buildings/t-24.jpg" data-lightbox="buildings" class="d-block">
+                                    <img src="assets/images/buildings/t-24.jpg" class="img-fluid w-100 rounded" alt="buildings">
+                                </a>
+                            </div>
+                            <div class="col-4 mb-2">
+                                <a href="assets/images/buildings/t-35.jpg" data-lightbox="buildings"
+                                    class="position-relative d-block">
+                                    <img src="assets/images/buildings/t-25.jpg" class="img-fluid w-100 rounded" alt="buildings">
+                                    <div class=" img-overlay">
+                                        +2
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3 align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-thumbs-up text-white bg-primary-gradiant w35 center-item"></i>
+                                <i class="fa-solid fa-heart text-white bg-red-gradient w35 center-item ms-1"></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block">2.8k likes</span>
+                            </div>
+                            <div class="ms-4 d-flex align-items-center">
+                                <i class="fa-regular fa-comment fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block">22 comment</span>
+                            </div>
+                            <div class="ms-auto d-flex align-items-center">
+                                <i class="fa-solid fa-share-nodes fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block">share</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end images -->
+                    <!-- start follwers  -->
+                     <div class=" p-3">
+                        <div class="owl-carousel follwers-carousel">
+                            <!-- single follow -->
+                            <div class="h-100 text-center py-2">
+                               <img src="assets/images/users/user-11.png" class="w-50 m-auto" alt="picture">
+                               <h3 class="font-xs pt-2 text-capitalize fw-600">Richard Bowers</h3>
+                               <p class="text-gray font-xxs">@macale343</p>
+                               <a href="#" class="text-uppercase font-xxs fw-600 text-white bg-success px-3 py-2 rounded-pill">follow</a>
+                            </div>
+                            <div class="h-100 text-center py-2">
+                                <img src="assets/images/users/user-7.png" class="w-50 m-auto" alt="picture">
+                                <h3 class="font-xs pt-2 text-capitalize fw-600">David Goria </h3>
+                                <p class="text-gray font-xxs">@macale343</p>
+                                <a href="#" class="text-uppercase font-xxs fw-600 text-white bg-success px-3 py-2 rounded-pill">follow</a>
+                            </div>
+                            <div class="h-100 text-center py-2">
+                                <img src="assets/images/users/user-6.png" class="w-50 m-auto" alt="picture">
+                                <h3 class="font-xs pt-2 text-capitalize fw-600">Vincent Parks</h3>
+                                <p class="text-gray font-xxs">@macale343</p>
+                                <a href="#" class="text-uppercase font-xxs fw-600 text-white bg-success px-3 py-2 rounded-pill">follow</a>
+                            </div>
+                            <div class="h-100 text-center py-2">
+                                <img src="assets/images/users/user-8.png" class="w-50 m-auto" alt="picture">
+                                <h3 class="font-xs pt-2 text-capitalize fw-600">Studio Express </h3>
+                                <p class="text-gray font-xxs">@macale343</p>
+                                <a href="#" class="text-uppercase font-xxs fw-600 text-white bg-success px-3 py-2 rounded-pill">follow</a>
+                            </div>
+                            <div class="h-100 text-center py-2">
+                                <img src="assets/images/users/user-7.png" class="w-50 m-auto" alt="picture">
+                                <h3 class="font-xs pt-2 text-capitalize fw-600">Aliqa Macale  </h3>
+                                <p class="text-gray font-xxs">@macale343</p>
+                                <a href="#" class="text-uppercase font-xxs fw-600 text-white bg-success px-3 py-2 rounded-pill">follow</a>
+                            </div>
+                            <div class="h-100 text-center py-2">
+                                <img src="assets/images/users/user-11.png" class="w-50 m-auto" alt="picture">
+                                <h3 class="font-xs pt-2 text-capitalize fw-600">Richard Bowers</h3>
+                                <p class="text-gray font-xxs">@macale343</p>
+                                <a href="#" class="text-uppercase font-xxs fw-600 text-white bg-success px-3 py-2 rounded-pill">follow</a>
+                             </div>
+                             <div class="h-100 text-center py-2">
+                                 <img src="assets/images/users/user-7.png" class="w-50 m-auto" alt="picture">
+                                 <h3 class="font-xs pt-2 text-capitalize fw-600">David Goria </h3>
+                                 <p class="text-gray font-xxs">@macale343</p>
+                                 <a href="#" class="text-uppercase font-xxs fw-600 text-white bg-success px-3 py-2 rounded-pill">follow</a>
+                             </div>
+                             <div class="h-100 text-center py-2">
+                                 <img src="assets/images/users/user-6.png" class="w-50 m-auto" alt="picture">
+                                 <h3 class="font-xs pt-2 text-capitalize fw-600">Vincent Parks</h3>
+                                 <p class="text-gray font-xxs">@macale343</p>
+                                 <a href="#" class="text-uppercase font-xxs fw-600 text-white bg-success px-3 py-2 rounded-pill">follow</a>
+                             </div>
+                             <div class="h-100 text-center py-2">
+                                 <img src="assets/images/users/user-8.png" class="w-50 m-auto" alt="picture">
+                                 <h3 class="font-xs pt-2 text-capitalize fw-600">Studio Express </h3>
+                                 <p class="text-gray font-xxs">@macale343</p>
+                                 <a href="#" class="text-uppercase font-xxs fw-600 text-white bg-success px-3 py-2 rounded-pill">follow</a>
+                             </div>
+                             <div class="h-100 text-center py-2">
+                                 <img src="assets/images/users/user-7.png" class="w-50 m-auto" alt="picture">
+                                 <h3 class="font-xs pt-2 text-capitalize fw-600">Aliqa Macale  </h3>
+                                 <p class="text-gray font-xxs">@macale343</p>
+                                 <a href="#" class="text-uppercase font-xxs fw-600 text-white bg-success px-3 py-2 rounded-pill">follow</a>
+                             </div>
+                            
+                        </div>
+                    </div>
+                    <!-- end follwers -->
+                     <!-- start video 2 -->
+                     <div class="rounded-xxl shadow-xss mt-3 p-4">
+                        <div class="d-flex align-items-center pb-2">
+                            <img src="assets/images/users/user-8.png" alt="user" class="w50">
+                            <div class="ms-2">
+                                <h3 class="font-xs m-0 text-capitalize fw-600">ahmad sbehat</h3>
+                                <p class="text-gray fw-bold font-xxs">4 houer ago</p>
+                            </div>
+                            <a href="#" class="font-xs me-3 bg-gray w35 center-item ms-auto">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </div>
+                        <video src="assets/images/v-1.mp4" width="100%" controls class="rounded"></video>
+                        <p class="mt-2 text-gray font-xs pt-2">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci inventore et architecto
+                            quos ad reiciendis sunt autem consequuntur velit nisi!
+                            <a href="#" class="text-primary fw-bold">see more</a>
+                        </p>
+                        <div class="d-flex mt-3 align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-thumbs-up text-white bg-primary-gradiant w35 center-item"></i>
+                                <i class="fa-solid fa-heart text-white bg-red-gradient w35 center-item ms-1"></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block ">2.8k likes</span>
+                            </div>
+                            <div class="ms-4 d-flex align-items-center">
+                                <i class="fa-regular fa-comment fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block">22 comment</span>
+                            </div>
+                            <div class="ms-auto d-flex align-items-center">
+                                <i class="fa-solid fa-share-nodes fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block ">share</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end video 2-->
+                     <!-- start man-photo -->
+                     <div class="rounded-xxl shadow-xss mt-3 p-4 mb-3">
+                        <div class="d-flex align-items-center pb-2">
+                            <img src="assets/images/users/user-4.png" alt="user" class="w50">
+                            <div class="ms-2">
+                                <h3 class="font-xs m-0 text-capitalize fw-600">ahmad sbehat</h3>
+                                <p class="text-gray fw-bold font-xxs">4 houer ago</p>
+                            </div>
+                            <a href="#" class="font-xs me-3 bg-gray w35 center-item ms-auto">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/t-30.jpg" width="100%" class="rounded">
+                        <p class="mt-2 text-gray font-xs pt-2">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci inventore et architecto
+                            quos ad reiciendis sunt autem consequuntur velit nisi!
+                            <a href="#" class="text-primary fw-bold">see more</a>
+                        </p>
+                        <div class="d-flex mt-3 align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-thumbs-up text-white bg-primary-gradiant w35 center-item"></i>
+                                <i class="fa-solid fa-heart text-white bg-red-gradient w35 center-item ms-1"></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block ">2.8k likes</span>
+                            </div>
+                            <div class="ms-4 d-flex align-items-center">
+                                <i class="fa-regular fa-comment fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block">22 comment</span>
+                            </div>
+                            <div class="ms-auto d-flex align-items-center">
+                                <i class="fa-solid fa-share-nodes fs-3 "></i>
+                                <span class="ms-1 fw-600 font-xs d-none d-md-inline-block ">share</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end man-photo -->
+                    <!-- start dots-animation -->
+                    <div class="bg-white p-3 shadow-xss rounded-xxl d-flex justify-content-center">
+                    <div class="dots"></div>
+                    </div>
+                    <!-- end dots-animation -->
+                    <!--  -->
+                </div>
+                <!-- right-side -->
+                <div class="col-lg-4 col-xl-3">
+                    <!-- freind request -->
+                    <div class="bg-white rounded-xxl shadow-xss mb-3">
+                        <div class="d-flex p-3 align-items-center justify-content-between border-bottom">
+                            <h4 class="text-capitalize font-xs fw-600 m-0">freind request</h4>
+                            <a href="#" class="text-capitalize font-xs fw-600 text-primary">see all</a>
+                        </div>
+                        <!-- single friend-card -->
+                        <div class="p-3">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/users/user-7.png" alt="user image">
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="font-xs fw-600 text-capitalize m-0">Anthony Daugloi</h4>
+                                    <p class="font-xxs text-gray m-0 mt-2">12 mutual friends</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <a href="#"
+                                    class="text-capitalize px-4 py-2 bg-primary-gradiant rounded-pill font-xxs text-white ">confirm</a>
+                                <a href="#"
+                                    class="text-capitalize px-4 py-2 bg-gray rounded-pill font-xxs text-black ms-3">delete</a>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/users/user-4.png" alt="user image">
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="font-xs fw-600 text-capitalize m-0">Mohannad Zitoun</h4>
+                                    <p class="font-xxs text-gray m-0 mt-2">73 mutual friends</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <a href="#"
+                                    class="text-capitalize px-4 py-2 bg-primary-gradiant rounded-pill font-xxs text-white ">confirm</a>
+                                <a href="#"
+                                    class="text-capitalize px-4 py-2 bg-gray rounded-pill font-xxs text-black ms-3">delete</a>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/users/user-8.png" alt="user image">
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="font-xs fw-600 text-capitalize m-0">nagham ghannam</h4>
+                                    <p class="font-xxs text-gray m-0 mt-2">12 mutual friends</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <a href="#"
+                                    class="text-capitalize px-4 py-2 bg-primary-gradiant rounded-pill font-xxs text-white ">confirm</a>
+                                <a href="#"
+                                    class="text-capitalize px-4 py-2 bg-gray rounded-pill font-xxs text-black ms-3">delete</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- confirm freind -->
+                    <div class="bg-white rounded-xxl shadow-xss pb-3 mb-3">
+                        <div class="d-flex p-3 align-items-center justify-content-between ">
+                            <h4 class="text-capitalize font-xs fw-600 m-0">confirm freind</h4>
+                            <a href="#" class="text-capitalize font-xs fw-600 text-primary">see all</a>
+                        </div>
+                        <!-- single friend-card -->
+                        <div class="px-3 mb-2">
+                            <div class="d-flex align-items-center bg-gray rounded p-2">
+                                <img src="assets/images/users/user-3.png" alt="user image">
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="font-xs fw-600 text-capitalize m-0">Anthony Daugloi</h4>
+                                    <p class="font-xxs text-gray m-0 mt-2">12 mutual friends</p>
+                                </div>
+                                <a href="#"
+                                    class="w35 bg-white d-flex align-items-center justify-content-center ms-auto">+</a>
+                            </div>
+                        </div>
+                        <div class="px-3 mb-2">
+                            <div class="d-flex align-items-center bg-gray rounded p-2">
+                                <img src="assets/images/users/user-6.png" alt="user image">
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="font-xs fw-600 text-capitalize m-0">David</h4>
+                                    <p class="font-xxs text-gray m-0 mt-2">12 mutual friends</p>
+                                </div>
+                                <a href="#"
+                                    class="w35 bg-white d-flex align-items-center justify-content-center ms-auto">+</a>
+                            </div>
+                        </div>
+                        <div class="px-3 mb-2">
+                            <div class="d-flex align-items-center bg-gray rounded p-2">
+                                <img src="assets/images/users/user-8.png" alt="user image">
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="font-xs fw-600 text-capitalize m-0">nagham ghannam</h4>
+                                    <p class="font-xxs text-gray m-0 mt-2">12 mutual friends</p>
+                                </div>
+                                <a href="#"
+                                    class="w35 bg-white d-flex align-items-center justify-content-center ms-auto">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- suggest -->
+                    <div class="bg-white rounded-xxl shadow-xss mb-3">
+                        <div class="d-flex p-3 align-items-center justify-content-between border-bottom">
+                            <h4 class="text-capitalize font-xs fw-600 m-0">suggest group</h4>
+                            <a href="#" class="text-capitalize font-xs fw-600 text-primary">see all</a>
+                        </div>
+                        <div class="p-3">
+                            <img src="assets/images/e-2.jpg" class="img-fluid rounded-xxl" alt="sea">
+                            <ul class="list-unstyled d-flex align-items-center mt-3">
+                                <li class="w20">
+                                    <img src="assets/images/users/user-8.png" alt="user image" class="w35">
+                                </li>
+                                <li class="w20">
+                                    <img src="assets/images/users/user-8.png" alt="user image" class="w35">
+                                </li>
+                                <li class="w20">
+                                    <img src="assets/images/users/user-8.png" alt="user image" class="w35">
+                                </li>
+                                <li class="w20">
+                                    <img src="assets/images/users/user-8.png" alt="user image" class="w35">
+                                </li>
+                                <li class="w20">
+                                    <a href="#"
+                                        class="w35 text-gray d-flex bg-gray align-items-center justify-content-center font-xxs fw-600">+2</a>
+                                </li>
+                                <li class="ms-3 ms-md-5">
+                                    <p class="m-0 text-gray font-xxs fw-600">member applay</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- suggest page -->
+                    <div class="bg-white rounded-xxl shadow-xss mb-3">
+                        <div class="d-flex p-3 align-items-center justify-content-between border-bottom">
+                            <h4 class="text-capitalize font-xs fw-600 m-0">suggest pages</h4>
+                            <a href="#" class="text-capitalize font-xs fw-600 text-primary">see all</a>
+                        </div>
+                        <div class="p-3">
+                            <img src="assets/images/g-2.jpg" class="img-fluid rounded-xxl" alt="sea">
+                            <a href="#"
+                                class="bg-gray rounded-pill py-2 mt-2 text-capitalize font-xs w-100 d-inline-block text-center"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i>like page</a>
+                        </div>
+                        <div class="p-3">
+                            <img src="assets/images/g-3.jpg" class="img-fluid rounded-xxl" alt="sea">
+                            <a href="#"
+                                class="bg-gray rounded-pill py-2 mt-2 text-capitalize font-xs w-100 d-inline-block text-center"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i>like page</a>
+                        </div>
+
+                    </div>
+                    <!-- events -->
+                    <div class="bg-white rounded-xxl shadow-xss mb-3">
+                        <div class="d-flex p-3 align-items-center justify-content-between ">
+                            <h4 class="text-capitalize font-xs fw-600 m-0">events</h4>
+                            <a href="#" class="text-capitalize font-xs fw-600 text-primary">see all</a>
+                        </div>
+                        <div class="p-3">
+                            <!-- single event -->
+                            <div class="d-flex align-items-center">
+                                <h4 class="bg-success rounded-xxl text-white p-3 text-center fw-600"><span
+                                        class="d-block font-xs text-uppercase">feb</span>22</h4>
+                                <div class="ms-2">
+                                    <h4 class="m-0 font-xs fw-600">Meeting with clients</h4>
+                                    <p class="m-0 mt-1 font-xxs text-gray">41 madison ave, floor 24 new work, NY 10010
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- single event -->
+                            <div class="d-flex align-items-center">
+                                <h4 class="bg-warning rounded-xxl text-white p-3 text-center fw-600"><span
+                                        class="d-block font-xs text-uppercase">apr</span>30</h4>
+                                <div class="ms-2">
+                                    <h4 class="m-0 font-xs fw-600">Developer Programe</h4>
+                                    <p class="m-0 mt-1 font-xxs text-gray">41 madison ave, floor 24 new work, NY 10010
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- single event -->
+                            <div class="d-flex align-items-center">
+                                <h4 class="bg-primary rounded-xxl text-white p-3 text-center fw-600"><span
+                                        class="d-block font-xs text-uppercase">apr</span>23</h4>
+                                <div class="ms-2">
+                                    <h4 class="m-0 font-xs fw-600">Aniversary Event</h4>
+                                    <p class="m-0 mt-1 font-xxs text-gray">41 madison ave, floor 24 new work, NY 10010
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main-content -->
+    <!-- start chat-contact -->
+    <div class="chat-contacts position-fixed d-none d-lg-block p-3 bg-white ">
+        <div class="content-card rounded-xxl shadow-xss p-3">
+            <p class="text-uppercase text-gray">contacts</p>
+            <ul class="list-unstyled">
+                <li class="d-flex align-items-center mb-2 item">
+                    <img src="assets/images/users/user-8.png" alt="user image" class="w35 ">
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto badge bg-primary rounded">2</span>
+                </li>
+                <li class="d-flex align-items-center mb-2 item">
+                    <img src="assets/images/users/user-8.png" alt="user image" class="w35 ">
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto p-1 bg-success rounded"></span>
+                </li>
+                <li class="d-flex align-items-center mb-2 item">
+                    <img src="assets/images/users/user-8.png" alt="user image" class="w35 ">
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto p-1 bg-warning rounded"></span>
+                </li>
+                <li class="d-flex align-items-center mb-2 item">
+                    <img src="assets/images/users/user-8.png" alt="user image" class="w35 ">
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto p-1 bg-danger rounded"></span>
+                </li>
+                </li>
+                <li class="d-flex align-items-center mb-2 item">
+                    <img src="assets/images/users/user-8.png" alt="user image" class="w35 ">
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto p-1 bg-success rounded"></span>
+                </li>
+                <li class="d-flex align-items-center mb-2 item">
+                    <img src="assets/images/users/user-8.png" alt="user image" class="w35 ">
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto p-1 bg-warning rounded"></span>
+                </li>
+                <li class="d-flex align-items-center mb-2 item">
+                    <img src="assets/images/users/user-8.png" alt="user image" class="w35 ">
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto p-1 bg-danger rounded"></span>
+                </li>
+            </ul>
+            <p class="text-uppercase text-gray">Groups</p>
+            <ul class="list-unstyled">
+                <li class="d-flex align-items-center mb-2 item">
+                    <span
+                        class="w35 text-uppercase bg-blue-gradient text-white d-flex align-items-center justify-content-center fw-bolder">aa</span>
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                </li>
+                <li class="d-flex align-items-center mb-2 item">
+                    <span
+                        class="w35 text-uppercase bg-blue-gradient text-white d-flex align-items-center justify-content-center fw-bolder">aa</span>
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                </li>
+                <li class="d-flex align-items-center mb-2 item">
+                    <span
+                        class="w35 text-uppercase bg-blue-gradient text-white d-flex align-items-center justify-content-center fw-bolder">aa</span>
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                </li>
+            </ul>
+            <p class="text-uppercase text-gray">pages</p>
+            <ul class="list-unstyled">
+                <li class="d-flex align-items-center mb-2 item">
+                    <span
+                        class="w35 text-uppercase bg-blue-gradient text-white d-flex align-items-center justify-content-center fw-bolder">aa</span>
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                </li>
+                <li class="d-flex align-items-center mb-2 item">
+                    <span
+                        class="w35 text-uppercase bg-blue-gradient text-white d-flex align-items-center justify-content-center fw-bolder">aa</span>
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                </li>
+                <li class="d-flex align-items-center mb-2 item">
+                    <span
+                        class="w35 text-uppercase bg-blue-gradient text-white d-flex align-items-center justify-content-center fw-bolder">aa</span>
+                    <h3 class="ms-2">Hurin Seary</h3>
+                    <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- end chat-contact -->
+
+
+
+
+    <!-- bootstrap -->
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script src="vendor/js/jquery-3.7.1.min.js"></script>
+    <!-- lightbox -->
+    <script src="vendor/js/lightbox.min.js"></script>
+    <!-- owl carousel -->
+    <script src="vendor/js//owl.carousel.min.js"></script>
+    <!-- custmized -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
